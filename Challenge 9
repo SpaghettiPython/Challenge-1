@@ -14,11 +14,11 @@ import random
 import sys
 def guessing_game():
     number = random.randint(1, 9)
-    guess = int(input("Enter an integer from 1 to 9:\n"))
+    guess = int(input("Enter an number from 1 to 9:\n"))
     while number != "guess":
         if guess > number:
             print("Try a lower number\n")
-            guess = int(input("Please guess a number between {} and 9\n".format(guess)))
+            guess = int(input("Please guess a number between 1 and {}\n".format(guess)))
         elif guess < number:
             print("Try a higher number\n")
             guess = int(input("Please guess a number between {} and 9\n".format(guess)))
