@@ -1,0 +1,25 @@
+Exercise 11 (and Solution)
+
+Ask the user for a number and determine whether the number is prime or not. 
+(For those who have forgotten, a prime number is a number that has no divisors.) 
+You can (and should!) use your answer to Exercise 4 to help you. 
+
+import sys
+def pr_or_not():
+    number = int(input("Can you give me a number please\n"))
+    if number == 2:
+        sys.exit(print("2 is a prime number"))
+    if number >= 1:
+        for i in range(2,number):
+            if number % i == 0:
+                print(number, "is not a prime number")
+                print(i, "times", number // i, "is", number)
+                break
+            else:
+                print(number, "is a prime number")
+                break
+
+    else:
+        print(number, "is not a prime number")
+
+pr_or_not()
