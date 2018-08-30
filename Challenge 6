@@ -11,7 +11,7 @@ def isPalindrome(s):
 s = input("Type a word to find out if its a palindrome or not:\n")
 answer = isPalindrome(s)
 
-if (answer):
+if answer:
     print("Yes, this word is a palindrome")
 else:
     print("No, this is not a palindrome")
